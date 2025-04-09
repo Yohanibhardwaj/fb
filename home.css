@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:url(../project/images/tree.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 58px;
+    color:rgb(255, 255, 255);
+    margin-left: -20px;
+}
+
+h2{
+    font-size: 30px;
+    margin-left: -20px;
+    color:#ffffff
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    margin-right: 50px;;
+}
+
+.menu-bar {
+    text-align: right;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    width: 75%;
+    text-align: center;
+}
+
+.menu-bar ul li {
+    width: 100%;
+    margin: 15px;
+    padding: 15px;
+    padding-left: 15px;
+    position: relative;
+    bottom:  0px;
+    transition: NONE;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: #031f0b6c;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.menu-bar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left:  0;
+    right: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.menu-bar ul li:hover::after {
+    width: 100%;
+}
+
+.sub-menu-2 {
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-2 {
+    display: block;
+    position: absolute;
+    background: none;
+    margin-top: 15px;
+    margin-left: -220px;
+    cursor: pointer;
+}
+
+.sub-menu-3 {
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-3 {
+    display: block;
+    position: absolute;
+    background: none;
+    margin-top: 15px;
+    margin-left: -50px;
+    cursor: pointer;
+}
+
+.welcome {
+    padding-top: 30px;
+    padding-left: 70px;    
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    margin-top: -100px;
+    margin-left: 30px;
+}
+
+button {
+    width: 10%;
+    padding: 12px;
+    text-align: center;
+    margin: 20px 20px;
+    margin-left: -20px;
+    margin-right: 50px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(255, 255, 255);
+    background: #0e381aad; 
+    color: #ffffff;
+    cursor: pointer;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+span {
+    background: rgba(122, 121, 121, 0.793);
+    height: 100px;
+    width: 0px;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+    color: rgb(255, 255, 255);
+    transform-style: preserve-3d;
+}
+
+.button_link button a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+hr{
+    width: 87.5%;
+    margin-left: 12.5%;
+    margin-top: 1px;
+}   

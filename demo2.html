@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jungle Safari - Experience the Zoo</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <style>
+        body {
+            background-image: url(../project/images/5d539df7-0231-446d-bb8e-324a93b3bb92.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .menu-item:hover::after {
+            content: '';
+            height: 3px;
+            width: 100%;
+            background: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: width 0.5s;
+        }
+        
+        .btn-hover:hover span {
+            width: 100%;
+        }
+        
+        .btn-hover span {
+            background: rgba(122, 121, 121, 0.793);
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body class="font-sans box-border">
+    <div class="container mx-auto px-4">
+        <!-- Menu Bar -->
+        <nav class="text-right pt-8">
+            <ul class="inline-flex list-none text-white w-full md:w-3/4 text-center justify-end">
+                <li class="relative px-4 py-3 mx-2 menu-item">
+                    <a href="enquire.html" class="no-underline text-white uppercase font-bold text-lg">
+                        ENQUIRE
+                    </a>
+                </li>
+                <li class="relative px-4 py-3 mx-2 menu-item">
+                    <a href="about.html" class="no-underline text-white uppercase font-bold text-lg">
+                        ABOUT&nbsp;US
+                    </a>
+                </li>
+                <li class="relative px-4 py-3 mx-2 menu-item group">
+                    <a href="services.html" class="no-underline text-white uppercase font-bold text-lg">
+                        SERVICES
+                    </a>
+                </li>
+                <li class="relative px-4 py-3 mx-2 menu-item group">
+                    <a href="help.html" class="no-underline text-white uppercase font-bold text-lg">
+                        HELP&nbsp;CENTER
+                    </a>
+                    <div class="hidden group-hover:block absolute bg-transparent mt-4 -ml-16">
+                        <ul>
+                            <li>
+                                <a href="feedback.html" class="no-underline text-white uppercase font-bold">
+                                    Give&nbsp;FEEDBACK
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="relative px-4 py-3 mx-2 menu-item group">
+                    <a href="#" class="no-underline text-white uppercase font-bold text-lg">
+                        SOCIAL&nbsp;MEDIA
+                    </a>
+                    <div class="hidden group-hover:block absolute bg-transparent mt-4 -ml-56">
+                        <ul>
+                            <li class="py-1">
+                                <a href="https://www.facebook.com/profile.php?id=61552209804640&mibextid=ZbWKwL" class="no-underline text-white uppercase font-bold">
+                                    FACEBOOK
+                                </a>
+                            </li>
+                            <li class="py-1">
+                                <a href="https://instagram.com/global360properties?igshid=MzRlODBiNWFlZA==" class="no-underline text-white uppercase font-bold">
+                                    INSTAGRAM
+                                </a>
+                            </li>
+                            <li class="py-1">
+                                <a href="https://twitter.com/GlobalP50050" class="no-underline text-white uppercase font-bold">
+                                    X
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="relative px-4 py-3 mx-2 menu-item">
+                    <a href="t&c.html" class="no-underline text-white uppercase font-bold text-lg">
+                        T. & C.
+                    </a>
+                </li>
+            </ul>
+            <hr class="w-3/4 ml-1/4 my-1">
+            <hr class="w-3/4 ml-1/4 my-1">
+        </nav>
+        
+        <!-- Logo -->
+        <div class="mt-4 ml-4 md:ml-12">
+            <a href="slf.html">
+                <img src="https://th.bing.com/th/id/OIP.UWUu4p82b8nIN5xiNOE1CQHaHa?pid=ImgDet&w=192&h=192&c=7&dpr=2" 
+                    class="w-24 md:w-32 cursor-pointer border-2 border-white p-1 rounded" alt="Logo">
+            </a>
+        </div>
+        
+        <!-- Welcome Section -->
+        <div class="py-12 px-4 md:px-12">
+            <h1 class="text-4xl md:text-6xl text-white -ml-4 md:-ml-5">Welcome to</h1>
+            <h1 class="text-4xl md:text-6xl text-white -ml-4 md:-ml-5">THE JUNGLE SAFARII</h1>
+            <br>
+            <h2 class="text-2xl md:text-3xl text-white -ml-4 md:-ml-5">
+                Experiencing the ZOO <br>Nurturing the evolving Fauna 
+            </h2>
+            <br>
+            <br>
+            <div>
+                <button type="button" class="relative overflow-hidden w-32 md:w-40 py-3 text-center my-4 mx-2 -ml-4 rounded-full font-bold border-2 border-white bg-green-900 bg-opacity-70 text-white cursor-pointer btn-hover">
+                    <span></span>
+                    <a href="signup.html" class="no-underline text-white uppercase">SIGN UP</a>
+                </button>
+                <button type="button" class="relative overflow-hidden w-32 md:w-40 py-3 text-center my-4 mx-2 rounded-full font-bold border-2 border-white bg-green-900 bg-opacity-70 text-white cursor-pointer btn-hover">
+                    <span></span>
+                    <a href="login.html" class="no-underline text-white uppercase">LOG IN</a>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

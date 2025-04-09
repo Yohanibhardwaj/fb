@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page - JUNGLE SAFARII</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-cover bg-no-repeat bg-center min-h-screen flex items-center justify-center" style="background-image: url('../project/images/IndiaTv474d2f_zoo.jpg');">
+    <div class="w-96 p-6 bg-gray-600 bg-opacity-20 shadow-md rounded-lg">
+        <h1 class="text-center text-white text-2xl font-bold">JUNGLE SAFARII</h1>
+        <h4 class="text-white text-center mt-2">Kindly fill your login details correctly.</h4>
+        <form id="login-form" method="post" action="login.php">
+            <div class="mt-4">
+                <label for="username" class="block text-white font-bold">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username"
+                    class="w-full p-2 border border-gray-400 rounded-md focus:border-black focus:outline-none" required>
+            </div>
+            <div class="mt-4">
+                <label for="password" class="block text-white font-bold">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password"
+                    class="w-full p-2 border border-gray-400 rounded-md focus:border-black focus:outline-none" required>
+            </div>
+            <div class="mt-6">
+                <input type="submit" id="submit" name="submit" value="Log In"
+                    class="w-full bg-gray-600 hover:bg-gray-800 text-white font-bold py-2 rounded-md cursor-pointer">
+            </div>
+        </form>
+        <div id="message" class="text-center text-red-500 font-bold mt-4"></div>
+    </div>
+</body>
+</html>

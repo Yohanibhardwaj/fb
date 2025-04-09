@@ -1,0 +1,74 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../images/signup-bg.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover;
+    color: #fff;
+}
+
+/* Center the form container */
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form heading */
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f9f9f9;
+}
+
+/* Form labels */
+.container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+/* Form inputs */
+.container input[type="text"],
+.container input[type="number"],
+.container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #f1f1f1;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Submit button */
+.container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.container input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* Message styling */
+.message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #f9f9f9;
+}
